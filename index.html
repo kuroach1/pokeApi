@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Arma aquí tu equipo Pokémon</h1>
+    </nav>
+    <div class="container">
+        <form action="" onsubmit="searchPokemon(event)">
+            <input type="text" name="pokemon" autocomplete="off" id="pokemon-input">
+            <button type="button" onclick="addPokemonToTeam()">Agregar equipo</button>
+            <button type="button" onclick="resetTeam()">Volver a comenzar</button>
+            <button type="button" onclick="showTeamHistory()">Mostrar historial de equipos</button>
+        </form>
+        <div id="team-message" class="team-message"></div> <!-- Aquí se mostrará el mensaje -->
+        <div id="team-container" class="team-container"></div>
+        <div id="history-container" class="history-container"></div>
+    </div>
+    <script src="script.js" type="text/javascript" defer></script>
+</body>
+</html>
